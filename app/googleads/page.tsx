@@ -117,49 +117,19 @@ export default function GoogleAds() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="w-full mt-16 relative bg-[#061a1c] rounded-lg overflow-hidden"
+                className="w-full mt-16 relative rounded-lg overflow-hidden"
               >
                 <div className="w-full relative p-8">
-                  <svg className="w-full h-auto" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <motion.path
-                      d="M40 80L360 80"
-                      stroke="#11fb96"
-                      strokeWidth="2"
-                      strokeDasharray="8 8"
-                      initial={{ pathLength: 0, opacity: 0 }}
-                      animate={{ pathLength: 1, opacity: 1 }}
-                      transition={{ duration: 2, repeat: Infinity, repeatType: "loop" }}
-                    />
-                    <motion.rect
-                      x="60"
-                      y="100"
-                      width="280"
-                      height="40"
-                      rx="20"
-                      stroke="#11fb96"
-                      strokeWidth="2"
-                      fill="none"
-                      initial={{ width: 0 }}
-                      animate={{ width: 280 }}
-                      transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop", delay: 0.5 }}
-                    />
-                    <motion.path
-                      d="M60 180L160 180M200 180L340 180"
-                      stroke="#11fb96"
-                      strokeWidth="2"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop", delay: 1 }}
-                    />
-                    <motion.path
-                      d="M60 220L120 220M160 220L340 220"
-                      stroke="#11fb96"
-                      strokeWidth="2"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop", delay: 1.5 }}
-                    />
-                  </svg>
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-auto rounded-lg"
+                    style={{ background: 'transparent' }}
+                  >
+                    <source src="/videos/googleads.webm" type="video/webm" />
+                  </video>
                 </div>
               </motion.div>
             </div>

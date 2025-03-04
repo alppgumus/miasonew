@@ -116,43 +116,19 @@ export default function SocialMedia() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="w-full mt-16 relative bg-[#061a1c] rounded-lg overflow-hidden"
+                className="w-full mt-16 relative  rounded-lg overflow-hidden"
               >
                 <div className="w-full relative p-8">
-                  <svg className="w-full h-auto" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <motion.rect
-                      x="100"
-                      y="40"
-                      width="200"
-                      height="220"
-                      rx="20"
-                      stroke="#11fb96"
-                      strokeWidth="2"
-                      fill="none"
-                      initial={{ height: 0 }}
-                      animate={{ height: 220 }}
-                      transition={{ duration: 2, repeat: Infinity, repeatType: "loop" }}
-                    />
-                    <motion.circle
-                      cx="200"
-                      cy="100"
-                      r="30"
-                      stroke="#11fb96"
-                      strokeWidth="2"
-                      fill="none"
-                      initial={{ scale: 0.5, opacity: 0 }}
-                      animate={{ scale: 1, opacity: 1 }}
-                      transition={{ duration: 1, repeat: Infinity, repeatType: "reverse" }}
-                    />
-                    <motion.path
-                      d="M140 160L260 160M140 190L220 190M140 220L240 220"
-                      stroke="#11fb96"
-                      strokeWidth="2"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop", delay: 0.5 }}
-                    />
-                  </svg>
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-auto rounded-lg"
+                    style={{ background: 'transparent' }}
+                  >
+                    <source src="/videos/metainstagram.webm" type="video/webm" />
+                  </video>
                 </div>
               </motion.div>
             </div>
