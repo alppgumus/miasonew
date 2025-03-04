@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Allow: /website
+Allow: /mobileapp
+Allow: /eticaretpaketleri
+Allow: /eticaretkurulumpaketleri
+Allow: /360performance
+Allow: /socialmedia
+Allow: /googleads
+
+Disallow: /aboutus
+Disallow: /contact
+Disallow: /privacy
+Disallow: /terms
+Disallow: /cookies
+Disallow: /careers
+Disallow: /careers/*
+Disallow: /prove-it
+
+Sitemap: https://miaso.co/sitemap.xml 
