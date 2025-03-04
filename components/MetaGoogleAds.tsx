@@ -45,7 +45,12 @@ const MetaGoogleAds = () => {
                 loop
                 muted
                 playsInline
-                className="w-[664px] h-[524px] rounded-lg mb-8"
+                className="w-full h-auto rounded-lg mix-blend-screen bg-transparent"
+                style={{
+                  mixBlendMode: 'screen',
+                  background: 'transparent',
+                  WebkitMaskImage: '-webkit-radial-gradient(white, black)'
+                }}
               >
                 <source src="videos/metainstagram.webm" type="video/webm" />
               </video>
@@ -70,7 +75,12 @@ const MetaGoogleAds = () => {
                 loop
                 muted
                 playsInline
-                className="w-[664px] h-[524px] rounded-lg mb-8"
+                className="w-full h-auto rounded-lg mix-blend-screen bg-transparent"
+                style={{
+                  mixBlendMode: 'screen',
+                  background: 'transparent',
+                  WebkitMaskImage: '-webkit-radial-gradient(white, black)'
+                }}
               >
                 <source src="videos/googleads.webm" type="video/webm" />
               </video>

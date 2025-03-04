@@ -118,13 +118,18 @@ export default function SocialMedia() {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="w-full mt-16"
               >
-                <video 
+                <video
                   ref={videoRef}
-                  autoPlay 
-                  loop 
-                  muted 
+                  autoPlay
+                  loop
+                  muted
                   playsInline
-                  className="w-full max-w-[800px] mx-auto "
+                  className="w-full h-auto rounded-lg mix-blend-screen bg-transparent"
+                  style={{
+                    mixBlendMode: 'screen',
+                    background: 'transparent',
+                    WebkitMaskImage: '-webkit-radial-gradient(white, black)'
+                  }}
                 >
                   <source src="/videos/metainstagram.webm" type="video/webm" />
                 </video>

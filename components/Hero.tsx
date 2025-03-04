@@ -24,11 +24,12 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-20 container mx-auto px-4 md:px-[90px] h-full flex flex-col justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="max-w-3xl pt-10 lg:pt-0">
+          <div className="max-w-3xl pt-0 lg:pt-0">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
+              className="mt-8 md:mt-0"
             >
               <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-6 text-left text-white">
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-2">

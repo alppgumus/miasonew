@@ -45,7 +45,12 @@ const CustomerConnection = () => {
                 loop
                 muted
                 playsInline
-                className="w-full h-auto rounded-lg mb-8"
+                className="w-full h-auto rounded-lg mix-blend-screen bg-transparent"
+                style={{
+                  mixBlendMode: 'screen',
+                  background: 'transparent',
+                  WebkitMaskImage: '-webkit-radial-gradient(white, black)'
+                }}
               >
                 <source src="/videos/customersvideo.webm" type="video/webm" />
               </video>
@@ -82,7 +87,12 @@ const CustomerConnection = () => {
                 loop
                 muted
                 playsInline
-                className="w-full h-auto rounded-lg mb-8"
+                className="w-full h-auto rounded-lg mix-blend-screen bg-transparent"
+                style={{
+                  mixBlendMode: 'screen',
+                  background: 'transparent',
+                  WebkitMaskImage: '-webkit-radial-gradient(white, black)'
+                }}
               >
                 <source src="/videos/cartvideo.webm" type="video/webm" />
               </video>
