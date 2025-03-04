@@ -34,8 +34,8 @@ const AnimatedList = React.memo(({
   return (
     <div className={`flex flex-col items-center gap-4 ${className}`}>
       <AnimatePresence>
-        {itemsToShow.map((item) => (
-          <AnimatedListItem key={(item).key}>
+        {React.Children.map(itemsToShow, (item, index) => (
+          <AnimatedListItem key={React.isValidElement(item) ? item.key : index}>
             {item}
           </AnimatedListItem>
         ))}
