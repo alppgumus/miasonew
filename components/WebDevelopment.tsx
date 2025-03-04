@@ -59,7 +59,12 @@ const WebDevelopment = () => {
               loop
               muted
               playsInline
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto rounded-lg mix-blend-screen bg-transparent"
+              style={{
+                mixBlendMode: 'screen',
+                background: 'transparent',
+                WebkitMaskImage: '-webkit-radial-gradient(white, black)'
+              }}
             >
               <source 
                 src={isMobile ? "videos/webdevelopmentmobile.webm" : "videos/webdevelopment.webm"} 
