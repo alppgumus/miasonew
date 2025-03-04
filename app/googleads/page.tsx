@@ -117,7 +117,7 @@ export default function GoogleAds() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="w-full mt-16"
+                className="w-full mt-16 relative bg-[#061a1c] rounded-lg overflow-hidden"
               >
                 <video
                   ref={videoRef}
@@ -125,12 +125,7 @@ export default function GoogleAds() {
                   loop
                   muted
                   playsInline
-                  className="w-full h-auto rounded-lg mix-blend-screen bg-transparent"
-                  style={{
-                    mixBlendMode: 'screen',
-                    background: 'transparent',
-                    WebkitMaskImage: '-webkit-radial-gradient(white, black)'
-                  }}
+                  className="w-full h-auto"
                 >
                   <source src="/videos/googleads.webm" type="video/webm" />
                 </video>
