@@ -116,15 +116,15 @@ export default function SocialMedia() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="w-full mt-16 relative  rounded-lg overflow-hidden"
+                className="w-full mt-16 relative rounded-lg overflow-hidden"
               >
-                <div className="w-full relative p-8">
+                <div className="w-full max-w-[1000px] mx-auto relative p-8">
                   <video
                     autoPlay
                     loop
                     muted
                     playsInline
-                    className="w-full h-auto rounded-lg"
+                    className="w-full h-auto rounded-lg max-h-[500px] object-contain"
                     style={{ background: 'transparent' }}
                   >
                     <source src="/videos/metainstagram.webm" type="video/webm" />
