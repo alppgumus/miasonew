@@ -118,7 +118,7 @@ export default function Contact() {
                 Dijital dönüşüm yolculuğunda bizimle birlikte çalışmak ister misiniz? Yetenekli ve tutkulu ekip arkadaşları arıyoruz.
               </p>
               <Link 
-                href="/career" 
+                href="/careers" 
                 className="text-[#00c16a] hover:text-[#00a85d] transition-colors text-lg font-light"
               >
                 Kariyer sayfamıza göz atın
