@@ -371,8 +371,8 @@ const Navbar = () => {
                             transition={{ delay: 0.3 }}
                             className="space-y-2"
                           >
-                            <Link href="/ticimax" className="block text-gray-400 hover:text-white">E-Ticaret Paketleri</Link>
-                            <Link href="/setup" className="block text-gray-400 hover:text-white">E-Ticaret Kurulum Paketleri</Link>
+                            <Link href="/eticaretpaketleri" className="block text-gray-400 hover:text-white">E-Ticaret Paketleri</Link>
+                            <Link href="/eticaretkurulumpaketleri" className="block text-gray-400 hover:text-white">E-Ticaret Kurulum Paketleri</Link>
                           </motion.div>
                         </motion.div>
 
@@ -398,9 +398,7 @@ const Navbar = () => {
                             className="space-y-2"
                           >
                             <Link href="/360performance" className="block text-gray-400 hover:text-white">360° Performans Pazarlama</Link>
-                            <Link href="/consultancy" className="block text-gray-400 hover:text-white">E-Ticaret Danışmanlığı</Link>
-                            <Link href="/socialmedia" className="block text-gray-400 hover:text-white">Meta Reklam Yönetimi</Link>
-                            <Link href="/socialmedia" className="block text-gray-400 hover:text-white">Sosyal Medya Yönetimi</Link>
+                            <Link href="/socialmedia" className="block text-gray-400 hover:text-white">Meta Reklam / Sosyal Medya Yönetimi</Link>
                             <Link href="/googleads" className="block text-gray-400 hover:text-white">Google Ads Reklam Yönetimi</Link>
                           </motion.div>
                         </motion.div>
@@ -412,11 +410,9 @@ const Navbar = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
+                    className="pt-2"
                   >
-                    <Link href="/references" className="block text-white py-2">
-                      Referanslar
-                    </Link>
-                    <Link href="/corporate" className="block text-white py-2">
+                    <Link href="/aboutus" className="block text-white py-2">
                       Kurumsal
                     </Link>
                     <Link href="/contact" className="block text-white py-2">
